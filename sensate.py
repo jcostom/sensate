@@ -111,7 +111,7 @@ def main():
     while True:
         (degreesC, degreesF, rH) = readSensor()
         watts = asyncio.run(readConsumption(plugIP))
-        print("C: {} / F: {} / rH: {} / watts: {}".format(degreesC, degreesF, rH, watts))
+        # print("C: {} / F: {} / rH: {} / watts: {}".format(degreesC, degreesF, rH, watts))
 
         if rH < low:
             asyncio.run(plugOff(plugIP))
