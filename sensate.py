@@ -127,10 +127,6 @@ def main():
         record = [
             {
                 "measurement": "atm_conditions",
-                "tags": {
-                    "location": "humidor"
-                },
-                "time": int(time.time()),
                 "fields": {
                     "degF": degreesF,
                     "rHum": rH,
