@@ -20,6 +20,6 @@ RUN \
 
 RUN mkdir /app
 COPY ./sensate.py /app
-RUN chmod 755 /app/plugmon.py
+RUN chmod 755 /app/sensate.py
 
 ENTRYPOINT [ "python3", "-u", "/app/sensate.py" ]
