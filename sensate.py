@@ -11,7 +11,7 @@ from influxdb_client import InfluxDBClient
 from influxdb_client.client.write_api import SYNCHRONOUS
 
 # Shift these to environment variables for Docker container
-plugIP = os.getenv('plugIP', "10.0.1.190")
+plugIP = os.getenv('plugIP')
 low = int(os.getenv('low', 35))
 high = int(os.getenv('high',45))
 stateChangeSleep = int(os.getenv('stateChangeSleep', 1800))
